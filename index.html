@@ -4,805 +4,610 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portofolio Fitria Azka Sabila, mahasiswa Sistem Informasi Universitas Negeri Surabaya.">
-  <title>Fitria Azka Sabila | Portfolio</title>
+  <title>Fitria Azka Sabila</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
-  <header class="navbar">
-    <div class="container nav-inner">
-      <a class="brand" href="#beranda">FAS<span class="brand-dot">.</span></a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="logo" href="#home">Portofolio<span>.</span></a>
 
-      <button class="menu-toggle" id="menuToggle" type="button"
-        aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Organization</a>
+        <a href="#awards">Awards</a>
+        <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-      <nav class="nav-menu" id="navMenu">
-        <a href="#beranda">Beranda</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#pendidikan">Pendidikan</a>
-        <a href="#proyek">Proyek</a>
-        <a href="#pengalaman">Organisasi</a>
-        <a href="#sertifikat">Sertifikat</a>
-        <a href="#pencapaian">Penghargaan</a>
-        <a href="#keterampilan">Keterampilan</a>
-        <a href="#kontak">Kontak</a>
-      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Aktifkan mode gelap">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
 
-      <button class="theme-toggle" id="themeToggle" type="button"
-        aria-label="Aktifkan mode gelap">
-        <span id="themeIcon">☾</span>
-      </button>
-    </div>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <!-- BERANDA -->
-    <section class="hero section" id="beranda">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="eyebrow">
-            <span class="status-dot"></span>
-            INFORMATION SYSTEMS STUDENT
-          </span>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">
+          <span class="status-dot"></span>
+          Information Systems Student
+        </span>
 
-          <p class="hero-greeting">Halo, saya</p>
-          <h1>Fitria Azka <span>Sabila.</span></h1>
+        <h1>Fitria Azka Sabila</h1>
 
-          <p class="hero-description">
-            Mahasiswa S1 Sistem Informasi Universitas Negeri Surabaya
-            yang memiliki ketertarikan pada teknologi, penelitian,
-            sistem informasi, administrasi, dan manajemen. Saya terus
-            mengembangkan kemampuan melalui proyek akademik, organisasi,
-            dan kolaborasi berbasis teknologi.
-          </p>
+        <p class="hero-subtitle">Information Systems Student at Universitas Negeri Surabaya</p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="#proyek">
-              Jelajahi Proyek <span>↗</span>
-            </a>
-            <a class="button button-secondary" href="#kontak">
-              Hubungi Saya
-            </a>
-          </div>
+        <p class="hero-description">
+          Mahasiswa Sistem Informasi yang memiliki ketertarikan pada
+          teknologi, penelitian, pengembangan sistem informasi,
+          UI/UX, administrasi, dan manajemen proyek.
+        </p>
 
-          <div class="social-links">
-            <a href="https://linkedin.com/in/fitriaazkasabila"
-              target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a href="https://github.com/zkasabila"
-              target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            <a href="tel:+6282228879712">Telepon ↗</a>
-          </div>
-
-          <p class="hero-location">Trenggalek, Jawa Timur, Indonesia</p>
+        <div class="hero-meta">
+          <span>Trenggalek, Jawa Timur</span>
+          <span>IPK 3.88/4.00</span>
         </div>
 
-        <aside class="profile-card">
-          <div class="profile-top">
-            <span class="profile-label">MY PROFILE</span>
-            <span class="profile-number">FAS / 2026</span>
-          </div>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="#contact">Contact Me</a>
+        </div>
 
-          <div class="profile-image-wrap">
-            <img
-              src="assets/foto-profil.png"
-              alt="Foto profil Fitria Azka Sabila"
-              class="profile-photo"
-            >
-          </div>
-
-          <div class="profile-bottom">
-            <div>
-              <h2>Fitria Azka Sabila</h2>
-              <p>S1 Sistem Informasi · UNESA</p>
-            </div>
-            <div class="gpa">
-              <span>IPK</span>
-              <strong>3.88</strong>
-              <small>/ 4.00</small>
-            </div>
-          </div>
-
-          <div class="profile-line"></div>
-          <p class="profile-note">
-            Research · Technology · Project Administration
-          </p>
-        </aside>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/fitriaazkasabila" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/zkasabila" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.instagram.com/zkasabila/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        </div>
       </div>
 
-      <div class="container focus-strip">
-        <span>AREA OF INTEREST</span>
-        <div>Information Systems</div>
-        <div>Research &amp; Technology</div>
-        <div>UI/UX Design</div>
-        <div>Database &amp; Data</div>
-        <div>Project Administration</div>
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img src="assets/foto-profil.png" alt="Foto profil Fitria Azka Sabila" class="profile-photo">
+        </div>
+
+        <div class="floating-card floating-card-top">
+          <span class="floating-icon">✳</span>
+          <span>
+            <strong>3.88 / 4.00</strong>
+            <small>Current GPA</small>
+          </span>
+        </div>
+
+        <div class="floating-card floating-card-bottom">
+          <span class="floating-icon">⌘</span>
+          <span>
+            <strong>Research & Technology</strong>
+            <small>Area of Interest</small>
+          </span>
+        </div>
       </div>
     </section>
 
-    <!-- TENTANG SAYA -->
-    <section class="section" id="tentang">
-      <div class="container about-grid">
+    <!-- About Me -->
+    <section class="section section-muted" id="about">
+      <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">01 — ABOUT ME</span>
-          <h2>Menghubungkan ide, sistem, dan manusia.</h2>
+          <span class="section-kicker">ABOUT ME</span>
+          <h2>About Me</h2>
         </div>
 
         <div class="about-content">
           <p>
-            Mahasiswa S1 Sistem Informasi Universitas Negeri Surabaya
-            yang memiliki ketertarikan pada teknologi, penelitian,
-            sistem informasi, administrasi, dan manajemen. Memiliki
-            pengalaman dalam organisasi, kepanitiaan, dan penelitian
-            (proyek) berbasis teknologi dengan kemampuan dalam
-            pengelolaan administrasi, dokumentasi, koordinasi,
-            komunikasi, dan kerja sama tim.
+            Saya merupakan mahasiswa S1 Sistem Informasi Universitas Negeri
+            Surabaya yang memiliki minat pada teknologi, penelitian,
+            sistem informasi, administrasi, dan manajemen. Saya memiliki
+            pengalaman dalam organisasi, kepanitiaan, serta proyek teknologi.
           </p>
-
           <p>
-            Terus mengembangkan kemampuan dalam pengembangan aplikasi,
-            desain UI/UX, pengolahan dan pelaporan data, serta
-            administrasi proyek melalui pengalaman kolaboratif dan
-            kegiatan akademik. Berkomitmen untuk terus belajar,
-            mengembangkan kemampuan, serta memberikan kontribusi
-            positif dalam setiap kesempatan.
+            Saya terbiasa bekerja dalam tim, melakukan dokumentasi,
+            menyusun laporan, mengelola administrasi, dan berkoordinasi
+            dengan berbagai pihak. Saya juga terus mengembangkan kemampuan
+            dalam pengembangan aplikasi, UI/UX, pengolahan data, dan
+            pengelolaan proyek.
           </p>
-
-          <div class="stats-grid">
-            <div class="stat-card">
-              <strong>3.88</strong>
-              <span>IPK / 4.00</span>
-            </div>
-            <div class="stat-card">
-              <strong>5</strong>
-              <span>Proyek akademik</span>
-            </div>
-            <div class="stat-card">
-              <strong>6</strong>
-              <span>Pengalaman organisasi</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- PENDIDIKAN -->
-    <section class="section section-soft" id="pendidikan">
-      <div class="container">
-        <div class="section-heading section-heading-row">
-          <div>
-            <span class="eyebrow">02 — EDUCATION</span>
-            <h2>Pendidikan</h2>
+    <!-- Education -->
+    <section class="section container" id="education">
+      <div class="section-heading">
+        <span class="section-kicker">EDUCATION</span>
+        <h2>Education</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <span class="item-date">August 2025 – Present</span>
+            <h3>Bachelor of Information Systems</h3>
+            <p class="item-place">Universitas Negeri Surabaya · Surabaya, Indonesia</p>
+            <p>
+              Current GPA: 3.88/4.00. Aktif mengikuti kegiatan akademik,
+              organisasi, dan proyek teknologi dengan minat pada penelitian,
+              teknologi informasi, data, dan manajemen.
+            </p>
           </div>
-          <p>Perjalanan akademik dan pengembangan kompetensi.</p>
-        </div>
+        </article>
 
-        <div class="education-grid">
-          <article class="content-card education-card">
-            <span class="card-index">01 / CURRENT</span>
-            <h3>S1 Sistem Informasi</h3>
-            <p class="card-subtitle">
-              Universitas Negeri Surabaya
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <span class="item-date">July 2023 – June 2025</span>
+            <h3>LPSC Acceleration Program — Science and Engineering</h3>
+            <p class="item-place">MAN 1 Trenggalek · Trenggalek, Indonesia</p>
+            <p>
+              Final score: 94.19/100. Berpartisipasi dalam kegiatan
+              akademik, nonakademik, organisasi, dan kepanitiaan.
             </p>
-            <p class="education-location">Surabaya, Indonesia</p>
-
-            <div class="card-meta">
-              <span>Agustus 2025 – Sekarang</span>
-              <span class="pill pill-blue">IPK 3,88 / 4,00</span>
-            </div>
-
-            <ul class="detail-list">
-              <li>Aktif dalam kegiatan akademik, organisasi, dan pengembangan proyek berbasis teknologi.</li>
-              <li>Memiliki ketertarikan pada penelitian, teknologi informasi, analisis data, dan manajemen.</li>
-              <li>Terlibat dalam pengembangan proyek mahasiswa di bidang teknologi dan sistem informasi.</li>
-            </ul>
-          </article>
-
-          <article class="content-card education-card">
-            <span class="card-index">02 / PREVIOUS</span>
-            <h3>Kelas LPSC (Akselerasi) Program IPA Teknik</h3>
-            <p class="card-subtitle">
-              Madrasah Aliyah Negeri 1 Trenggalek
-            </p>
-            <p class="education-location">Trenggalek, Indonesia</p>
-
-            <div class="card-meta">
-              <span>Juli 2023 – Juni 2025</span>
-              <span class="pill pill-blue">94,19 / 100</span>
-            </div>
-
-            <ul class="detail-list">
-              <li>Menempuh program akselerasi pada bidang IPA Teknik.</li>
-              <li>Aktif dalam berbagai kegiatan akademik, non-akademik, organisasi, dan kepanitiaan.</li>
-            </ul>
-          </article>
-        </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- PROYEK DAN PENELITIAN -->
-    <section class="section" id="proyek">
+    <!-- Projects -->
+    <section class="section section-muted" id="projects">
       <div class="container">
-        <div class="section-heading section-heading-row">
-          <div>
-            <span class="eyebrow">03 — PROJECTS &amp; RESEARCH</span>
-            <h2>Pengalaman Proyek dan Penelitian</h2>
-          </div>
-          <p>Lima proyek akademik dalam teknologi, desain, dan sistem informasi.</p>
+        <div class="section-heading">
+          <span class="section-kicker">PROJECTS</span>
+          <h2>Projects</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card project-featured">
-            <div class="project-art art-emerys">
-              <span class="art-number">01</span>
-              <span class="art-symbol">E<span>.</span></span>
-              <span class="art-caption">SMART WEARABLE · IoT</span>
+            <div class="project-topline">
+              <span class="project-number">01</span>
+              <span class="project-type">PKM-KC · 2026</span>
             </div>
-
-            <div class="project-body">
-              <span class="pill pill-blue">PKM-KC 2026</span>
-              <h3>EMERYS — Smart Wearable Sandal</h3>
-              <p class="card-subtitle">
-                Universitas Negeri Surabaya
-              </p>
-              <div class="card-meta">
-                <span>Anggota 1</span>
-                <span>Mei 2026 – Sekarang</span>
-              </div>
-
-              <p>
-                Proyek smart wearable sandal berbasis TinyML dan IoT
-                yang terintegrasi dengan aplikasi telemonitoring untuk
-                mitigasi risiko jatuh dan pemantauan kestabilan langkah
-                pada lansia.
-              </p>
-
-              <ul class="project-points">
-                <li>Bertanggung jawab dalam pengembangan front-end EMERYS Mobile Apps sesuai kebutuhan sistem.</li>
-                <li>Bertanggung jawab dalam pengelolaan administrasi proyek, meliputi laporan, logbook, dan keuangan.</li>
-                <li>Berkolaborasi dengan anggota tim dalam pengembangan proyek dan pencapaian luaran program.</li>
-              </ul>
-
-              <div class="tag-list">
-                <span>Flutter</span><span>Mobile Apps</span>
-                <span>IoT</span><span>TinyML</span>
-                <span>Project Administration</span>
-              </div>
+            <h3>EMERYS — Smart Wearable Sandal</h3>
+            <p>
+              Proyek smart wearable sandal berbasis TinyML dan IoT
+              yang terintegrasi dengan aplikasi telemonitoring untuk
+              mendukung mitigasi risiko jatuh pada lansia.
+            </p>
+            <ul class="tag-list">
+              <li>IoT</li>
+              <li>Mobile App</li>
+              <li>Front-End</li>
+              <li>Project Administration</li>
+            </ul>
+            <div class="project-footer">
+              <span>Team Member</span>
+              <span>May 2026 – Present</span>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-art art-database">
-              <span class="art-number">02</span>
-              <span class="art-symbol">DB<span>.</span></span>
-              <span class="art-caption">DATA &amp; REPORTING</span>
+            <div class="project-topline">
+              <span class="project-number">02</span>
+              <span class="project-type">Database</span>
             </div>
-
-            <div class="project-body">
-              <span class="pill">Proyek Akademik</span>
-              <h3>Sistem Pelaporan Basis Data Microsoft Access — Orizon Print House</h3>
-              <p class="card-subtitle">
-                Universitas Negeri Surabaya
-              </p>
-              <div class="card-meta">
-                <span>Implementator</span>
-                <span>Februari – Juni 2026</span>
-              </div>
-
-              <ul class="project-points">
-                <li>Mengembangkan fitur pelaporan basis data menggunakan Microsoft Access untuk studi kasus usaha konveksi simulasi.</li>
-                <li>Menerapkan kueri relasional dan fungsi agregasi, seperti INNER JOIN, SUM, COUNT, dan AVG, untuk mengolah data.</li>
-                <li>Mengembangkan laporan dengan fitur penyaringan, pengurutan, pratinjau cetak, dan ekspor PDF.</li>
-              </ul>
-
-              <div class="tag-list">
-                <span>Microsoft Access</span><span>SQL</span>
-                <span>Reporting</span><span>Data Processing</span>
-              </div>
+            <h3>Orizon Print House Reporting System</h3>
+            <p>
+              Implementasi sistem pelaporan menggunakan Microsoft Access
+              untuk simulasi bisnis konveksi, termasuk pengolahan data,
+              query agregasi, penyaringan data, dan ekspor laporan.
+            </p>
+            <ul class="tag-list">
+              <li>Microsoft Access</li>
+              <li>SQL</li>
+              <li>Reporting</li>
+            </ul>
+            <div class="project-footer">
+              <span>Implementer</span>
+              <span>Feb – Jun 2026</span>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-art art-postgres">
-              <span class="art-number">03</span>
-              <span class="art-symbol">SQL<span>.</span></span>
-              <span class="art-caption">DATABASE ENGINEERING</span>
+            <div class="project-topline">
+              <span class="project-number">03</span>
+              <span class="project-type">Database</span>
             </div>
-
-            <div class="project-body">
-              <span class="pill">Proyek Akademik</span>
-              <h3>Praktikum Pemrograman Basis Data PostgreSQL &amp; Navicat Premium</h3>
-              <p class="card-subtitle">
-                Universitas Negeri Surabaya
-              </p>
-              <div class="card-meta">
-                <span>Agustus 2026 – Sekarang</span>
-              </div>
-
-              <ul class="project-points">
-                <li>Merancang basis data relasional dan mengembangkan query SQL untuk pengolahan serta analisis data.</li>
-                <li>Mengimplementasikan trigger dan function untuk validasi data, aturan bisnis, audit, dan otomatisasi.</li>
-                <li>Mengoptimalkan performa query menggunakan indeks serta EXPLAIN ANALYZE untuk mengevaluasi waktu eksekusi.</li>
-              </ul>
-
-              <div class="tag-list">
-                <span>PostgreSQL</span><span>Navicat Premium</span>
-                <span>SQL</span><span>Query Optimization</span>
-              </div>
+            <h3>PostgreSQL Database Practicum</h3>
+            <p>
+              Pengelolaan basis data relasional menggunakan query SQL,
+              trigger, function, indeks, dan EXPLAIN ANALYZE untuk
+              mendukung validasi data dan evaluasi performa query.
+            </p>
+            <ul class="tag-list">
+              <li>PostgreSQL</li>
+              <li>Navicat Premium</li>
+              <li>SQL</li>
+            </ul>
+            <div class="project-footer">
+              <span>Academic Project</span>
+              <span>Aug 2026 – Present</span>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-art art-ux">
-              <span class="art-number">04</span>
-              <span class="art-symbol">UX<span>.</span></span>
-              <span class="art-caption">USER EXPERIENCE</span>
+            <div class="project-topline">
+              <span class="project-number">04</span>
+              <span class="project-type">UI/UX Design</span>
             </div>
-
-            <div class="project-body">
-              <span class="pill">Ketua Tim Proyek</span>
-              <h3>Perancangan Ulang UI/UX iPusnas</h3>
-              <p class="card-subtitle">
-                Universitas Negeri Surabaya
-              </p>
-              <div class="card-meta">
-                <span>Februari – Juni 2026</span>
-              </div>
-
-              <ul class="project-points">
-                <li>Menerapkan pendekatan Design Thinking melalui tahap riset, ideasi, pembuatan prototipe, dan pengujian.</li>
-                <li>Menyusun alur pengguna dan wireframe serta mengembangkan prototipe interaktif menggunakan Figma.</li>
-                <li>Melakukan pengujian kegunaan menggunakan Maze untuk mengevaluasi rancangan yang diusulkan.</li>
-              </ul>
-
-              <div class="tag-list">
-                <span>Figma</span><span>UI/UX</span>
-                <span>Design Thinking</span><span>Maze</span>
-              </div>
+            <h3>iPusnas UI/UX Redesign</h3>
+            <p>
+              Redesain antarmuka dan pengalaman pengguna menggunakan
+              Design Thinking, user flow, wireframe, prototipe Figma,
+              dan usability testing melalui Maze.
+            </p>
+            <ul class="tag-list">
+              <li>Figma</li>
+              <li>Design Thinking</li>
+              <li>Maze</li>
+            </ul>
+            <div class="project-footer">
+              <span>Team Leader</span>
+              <span>Feb – Jun 2026</span>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-art art-erp">
-              <span class="art-number">05</span>
-              <span class="art-symbol">ERP<span>.</span></span>
-              <span class="art-caption">BUSINESS PROCESS</span>
+            <div class="project-topline">
+              <span class="project-number">05</span>
+              <span class="project-type">Enterprise Systems</span>
             </div>
-
-            <div class="project-body">
-              <span class="pill">Ketua Tim Proyek</span>
-              <h3>Eksplorasi Implementasi Odoo ERP — Valora Craft Co.</h3>
-              <p class="card-subtitle">
-                Universitas Negeri Surabaya
-              </p>
-              <div class="card-meta">
-                <span>Februari – Juni 2026</span>
-              </div>
-
-              <ul class="project-points">
-                <li>Mengeksplorasi simulasi penerapan Odoo ERP pada studi kasus bisnis konveksi/manufaktur.</li>
-                <li>Mempelajari keterkaitan modul Employees, Purchase, Inventory, Quality Control, Manufacturing, Sales, dan Accounting.</li>
-                <li>Menganalisis alur proses bisnis dari pengadaan, persediaan, produksi, penjualan, hingga akuntansi.</li>
-              </ul>
-
-              <div class="tag-list">
-                <span>Odoo ERP</span><span>Inventory</span>
-                <span>Manufacturing</span><span>Business Process</span>
-              </div>
+            <h3>Odoo ERP — Valora Craft Co.</h3>
+            <p>
+              Eksplorasi implementasi ERP untuk simulasi bisnis konveksi
+              melalui modul Employees, Purchase, Inventory, Quality Control,
+              Manufacturing, Sales, dan Accounting.
+            </p>
+            <ul class="tag-list">
+              <li>Odoo ERP</li>
+              <li>Business Process</li>
+              <li>Team Coordination</li>
+            </ul>
+            <div class="project-footer">
+              <span>Team Leader</span>
+              <span>Feb – Jun 2026</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ORGANISASI -->
-    <section class="section section-soft" id="pengalaman">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">04 — ORGANIZATION &amp; LEADERSHIP</span>
-          <h2>Pengalaman Organisasi dan Kepanitiaan</h2>
-          <p>
-            Pengalaman dalam riset, administrasi, dokumentasi,
-            koordinasi, dan kolaborasi.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-card">
-              <div class="card-meta">
-                <span class="pill pill-blue">Riset &amp; Teknologi</span>
-                <span class="project-date">September 2026 – Sekarang</span>
-              </div>
-              <h3>BEM FT UNESA</h3>
-              <p class="card-subtitle">Staf Magang Departemen Riset dan Teknologi</p>
-              <ul class="detail-list">
-                <li>Berkontribusi dalam program kerja di lingkungan departemen riset dan teknologi serta lingkungan organisasi.</li>
-                <li>Berkolaborasi dengan anggota organisasi yang lain dalam pelaksanaan program dan kegiatan.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-card">
-              <div class="card-meta">
-                <span class="pill">Penelitian</span>
-                <span class="project-date">Januari 2026 – Sekarang</span>
-              </div>
-              <h3>Development Engineering Workshop Organization (DEWO) Robotic UNESA</h3>
-              <p class="card-subtitle">Anggota Divisi Penelitian</p>
-              <ul class="detail-list">
-                <li>Melakukan kegiatan penelitian dan mengeksplorasi gagasan berbasis teknologi di bidang robotika.</li>
-                <li>Berkontribusi dalam pengembangan konsep penelitian, tinjauan pustaka, dan luaran penelitian.</li>
-                <li>Berpartisipasi dalam penyusunan dan penulisan karya tulis ilmiah serta artikel penelitian.</li>
-                <li>Berkolaborasi dengan anggota tim selama proses penelitian dan pengembangan.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-card">
-              <div class="card-meta">
-                <span class="pill">Sekretariat &amp; Konsep</span>
-                <span class="project-date">Juli 2024 – Mei 2025</span>
-              </div>
-              <h3>Yearbook MAN 1 Trenggalek</h3>
-              <p class="card-subtitle">Sekretaris dan Koordinator Konsep</p>
-              <ul class="detail-list">
-                <li>Menyusun konsep desain, tata letak, dan rangkaian kegiatan yearbook.</li>
-                <li>Mengelola arsip data dan dokumentasi kegiatan.</li>
-                <li>Mengoordinasikan proses pembuatan yearbook dengan pihak vendor.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-card">
-              <div class="card-meta">
-                <span class="pill">Dokumentasi &amp; Editing</span>
-                <span class="project-date">Mei 2023 – April 2025</span>
-              </div>
-              <h3>PIK-R/M RPM Kecamatan Panggul</h3>
-              <p class="card-subtitle">Anggota Divisi Dokumentasi dan Editing</p>
-              <ul class="detail-list">
-                <li>Mendokumentasikan kegiatan organisasi.</li>
-                <li>Mengedit konten foto dan video.</li>
-                <li>Mendukung publikasi kegiatan melalui media sosial.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-card">
-              <div class="card-meta">
-                <span class="pill">Administrasi</span>
-                <span class="project-date">Oktober 2023 – Oktober 2024</span>
-              </div>
-              <h3>Organisasi Siswa Intra Madrasah (OSIM) MAN 1 Trenggalek</h3>
-              <p class="card-subtitle">Sekretaris I</p>
-              <ul class="detail-list">
-                <li>Mengelola administrasi dan surat-menyurat organisasi.</li>
-                <li>Menyusun notulensi rapat serta mengarsipkan dokumentasi program kerja.</li>
-                <li>Menyusun proposal dan laporan pertanggungjawaban kegiatan.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-card">
-              <div class="card-meta">
-                <span class="pill">Kesekretariatan</span>
-                <span class="project-date">Maret 2024 – Mei 2024</span>
-              </div>
-              <h3>Ajang Adu Prestasi Penggalang (JAGUAR) 5 se-Jawa Timur</h3>
-              <p class="card-subtitle">Anggota Bidang Kesekretariatan</p>
-              <ul class="detail-list">
-                <li>Membantu pengarsipan data administrasi peserta.</li>
-                <li>Membantu penghitungan hasil dan pembuatan sertifikat lomba.</li>
-                <li>Mendukung kelancaran teknis kegiatan.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
+    <!-- Organizational Experience -->
+    <section class="section container" id="experience">
+      <div class="section-heading">
+        <span class="section-kicker">ORGANIZATIONAL EXPERIENCE</span>
+        <h2>Organizational Experience</h2>
       </div>
-    </section>
 
-    <!-- SERTIFIKAT DAN PELATIHAN -->
-    <section class="section" id="sertifikat">
-      <div class="container">
-        <div class="section-heading section-heading-row">
-          <div>
-            <span class="eyebrow">05 — CERTIFICATES &amp; TRAINING</span>
-            <h2>Sertifikat dan Pelatihan</h2>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="experience-marker">01</div>
+          <div class="experience-main">
+            <span class="item-date">September 2026 – Present</span>
+            <h3>Research & Technology Department Intern</h3>
+            <p class="item-place">BEM FT UNESA</p>
+            <p>
+              Berkontribusi dalam program kerja departemen dan organisasi
+              serta berkolaborasi dengan anggota tim.
+            </p>
           </div>
-          <p>Pengembangan kemampuan teknis, manajemen, dan akademik.</p>
-        </div>
+        </article>
 
-        <div class="certificate-list">
-          <article class="certificate-item">
-            <span class="certificate-mark">01</span>
-            <div>
-              <h3>Microsoft Office — Word, Excel, PowerPoint</h3>
-              <p>LKP Almahyra Computer · 2023</p>
-            </div>
-          </article>
+        <article class="experience-item">
+          <div class="experience-marker">02</div>
+          <div class="experience-main">
+            <span class="item-date">January 2026 – Present</span>
+            <h3>Research Division Member</h3>
+            <p class="item-place">DEWO Robotic UNESA</p>
+            <p>
+              Mendukung riset teknologi dan robotika melalui penelusuran
+              literatur, pengembangan konsep, penulisan artikel ilmiah,
+              dan kolaborasi tim.
+            </p>
+          </div>
+        </article>
 
-          <article class="certificate-item">
-            <span class="certificate-mark">02</span>
-            <div>
-              <h3>RevoU Coding Camp</h3>
-              <p>Pengantar Rekayasa Perangkat Lunak · 17 April 2026</p>
-            </div>
-          </article>
+        <article class="experience-item">
+          <div class="experience-marker">03</div>
+          <div class="experience-main">
+            <span class="item-date">July 2024 – May 2025</span>
+            <h3>Secretary & Concept Coordinator</h3>
+            <p class="item-place">Yearbook MAN 1 Trenggalek</p>
+            <p>
+              Mengelola arsip dan dokumentasi, menyusun konsep kegiatan,
+              serta berkoordinasi dengan vendor.
+            </p>
+          </div>
+        </article>
 
-          <article class="certificate-item">
-            <span class="certificate-mark">03</span>
-            <div>
-              <h3>Dicoding Community Network (DCN)</h3>
-              <p>Community Contributor · 15 Juni 2026</p>
-            </div>
-          </article>
+        <article class="experience-item">
+          <div class="experience-marker">04</div>
+          <div class="experience-main">
+            <span class="item-date">May 2023 – April 2025</span>
+            <h3>Documentation & Editing Member</h3>
+            <p class="item-place">PIK-R/M RPM Kecamatan Panggul</p>
+            <p>
+              Melakukan dokumentasi kegiatan, mengedit foto dan video,
+              serta mendukung pengelolaan media sosial.
+            </p>
+          </div>
+        </article>
 
-          <article class="certificate-item">
-            <span class="certificate-mark">04</span>
-            <div>
-              <h3>LKMM Pra-TD Informatika</h3>
-              <p>29–30 November 2025</p>
-            </div>
-          </article>
+        <article class="experience-item">
+          <div class="experience-marker">05</div>
+          <div class="experience-main">
+            <span class="item-date">October 2023 – October 2024</span>
+            <h3>Secretary I</h3>
+            <p class="item-place">OSIM MAN 1 Trenggalek</p>
+            <p>
+              Mengelola surat-menyurat, notulensi, arsip, proposal kegiatan,
+              dan laporan pertanggungjawaban.
+            </p>
+          </div>
+        </article>
 
-          <article class="certificate-item">
-            <span class="certificate-mark">05</span>
-            <div>
-              <h3>Kegiatan Ameliorer 2025</h3>
-              <p>20 September – 16 November 2025</p>
-            </div>
-          </article>
-
-          <article class="certificate-item">
-            <span class="certificate-mark">06</span>
-            <div>
-              <h3>Diklat Karakter KIP-K Angkatan 2025</h3>
-              <p>Tahun 2025</p>
-            </div>
-          </article>
-
-          <article class="certificate-item">
-            <span class="certificate-mark">07</span>
-            <div>
-              <h3>PKKMB UNESA 2025</h3>
-              <p>19–25 Agustus 2025</p>
-            </div>
-          </article>
-
-          <article class="certificate-item">
-            <span class="certificate-mark">08</span>
-            <div>
-              <h3>LKMM-TD 2026</h3>
-              <p>9–10 Mei 2026</p>
-            </div>
-          </article>
-
-          <article class="certificate-item">
-            <span class="certificate-mark">09</span>
-            <div>
-              <h3>Mentoring National Essay Competition 2026</h3>
-              <p>16 Mei 2026</p>
-            </div>
-          </article>
-
-          <article class="certificate-item">
-            <span class="certificate-mark">10</span>
-            <div>
-              <h3>National Essay Competition 2026</h3>
-              <p>18 Mei 2026</p>
-            </div>
-          </article>
-
-          <article class="certificate-item">
-            <span class="certificate-mark">11</span>
-            <div>
-              <h3>Webinar National Essay Competition 2026</h3>
-              <p>7 Juni 2026</p>
-            </div>
-          </article>
-
-          <article class="certificate-item">
-            <span class="certificate-mark">12</span>
-            <div>
-              <h3>Kuliah Tamu Pelatihan K3 Pendidikan Teknik Elektro</h3>
-              <p>17 Mei 2026</p>
-            </div>
-          </article>
-        </div>
+        <article class="experience-item">
+          <div class="experience-marker">06</div>
+          <div class="experience-main">
+            <span class="item-date">March – May 2024</span>
+            <h3>Secretariat Member</h3>
+            <p class="item-place">JAGUAR 5 se-Jawa Timur</p>
+            <p>
+              Membantu administrasi peserta, pengarsipan, rekapitulasi nilai,
+              pembuatan sertifikat, dan dukungan teknis kegiatan.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- PENGHARGAAN -->
-    <section class="section section-soft" id="pencapaian">
+    <!-- Awards -->
+    <section class="section section-muted" id="awards">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">06 — AWARDS &amp; ACHIEVEMENTS</span>
-          <h2>Penghargaan dan Prestasi</h2>
-          <p>Pencapaian akademik, kompetisi, dan olahraga.</p>
+          <span class="section-kicker">AWARDS</span>
+          <h2>Awards</h2>
         </div>
 
-        <div class="achievement-grid">
-          <article class="achievement-card achievement-featured">
-            <span class="achievement-icon">01</span>
-            <div>
-              <span class="pill pill-blue">Pendanaan Nasional</span>
-              <h3>Pendanaan Program Kreativitas Mahasiswa Karsa Cipta (PKM-KC) 2026</h3>
-              <p>
-                Lolos pendanaan melalui proyek EMERYS. Terpilih dari
-                1.121 proposal yang didanai dari total 25.253 proposal
-                yang diajukan.
-              </p>
-            </div>
+        <div class="awards-grid">
+          <article class="award-card">
+            <span class="award-year">2026</span>
+            <h3>PKM-KC Funding Recipient</h3>
+            <p>
+              EMERYS terpilih dalam 1.121 proposal yang didanai dari
+              25.253 proposal yang diajukan.
+            </p>
           </article>
 
-          <article class="achievement-card">
-            <span class="achievement-icon">02</span>
-            <div>
-              <h3>Medali Emas Matematika KOSMIK 2026</h3>
-              <p>
-                Kompetisi Sains Indonesia Merdeka (KOSMIK) 2026,
-                diselenggarakan Prestasi Maju Indonesia.
-              </p>
-            </div>
+          <article class="award-card">
+            <span class="award-year">2026</span>
+            <h3>Gold Medal — Mathematics</h3>
+            <p>KOSMIK 2026, Prestasi Maju Indonesia.</p>
           </article>
 
-          <article class="achievement-card">
-            <span class="achievement-icon">03</span>
-            <div>
-              <h3>Siswa Berprestasi 1 MAN 1 Trenggalek</h3>
-              <p>Penghargaan prestasi siswa · 2025.</p>
-            </div>
+          <article class="award-card">
+            <span class="award-year">2025</span>
+            <h3>Student Achievement 1</h3>
+            <p>MAN 1 Trenggalek.</p>
           </article>
 
-          <article class="achievement-card">
-            <span class="achievement-icon">04</span>
-            <div>
-              <h3>Medali Emas Matematika — The Best National Student Olympiad</h3>
-              <p>
-                Diselenggarakan HMP Fisika UNEJ dan LPP · 2024.
-              </p>
-            </div>
+          <article class="award-card">
+            <span class="award-year">2024</span>
+            <h3>Gold Medal — Mathematics Olympiad</h3>
+            <p>
+              The Best National Student Olympiad, diselenggarakan
+              HMP Fisika UNEJ dan LPP.
+            </p>
           </article>
 
-          <article class="achievement-card">
-            <span class="achievement-icon">05</span>
-            <div>
-              <h3>Juara 3 Sepak Takraw Putri Kabupaten Trenggalek</h3>
-              <p>Pencapaian bidang olahraga · 2024.</p>
-            </div>
+          <article class="award-card">
+            <span class="award-year">2024</span>
+            <h3>3rd Place — Women's Sepak Takraw</h3>
+            <p>Tingkat Kabupaten Trenggalek.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- KETERAMPILAN -->
-    <section class="section" id="keterampilan">
+    <!-- Skills -->
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <span class="section-kicker">SKILLS</span>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skill-groups">
+        <article class="skill-group">
+          <h3>Technical Skills</h3>
+          <div class="skill-tags">
+            <span>Microsoft Word</span>
+            <span>Microsoft Excel</span>
+            <span>PowerPoint</span>
+            <span>Canva</span>
+            <span>Graphic Design</span>
+            <span>Figma UI/UX</span>
+            <span>Front-End Development</span>
+            <span>Microsoft Access</span>
+            <span>PostgreSQL</span>
+            <span>Navicat Premium</span>
+            <span>Firebase / Cloud Firestore</span>
+            <span>Odoo ERP</span>
+          </div>
+        </article>
+
+        <article class="skill-group">
+          <h3>Professional Skills</h3>
+          <div class="skill-tags">
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>Administration</span>
+            <span>Project Management</span>
+            <span>Coordination</span>
+            <span>Documentation</span>
+            <span>Problem Solving</span>
+            <span>Adaptability</span>
+            <span>Report Writing</span>
+            <span>Literature Review</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certificates & Training -->
+    <section class="section section-muted" id="certificates">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">07 — SKILLS</span>
-          <h2>Keterampilan</h2>
-          <p>Kompetensi teknis dan profesional yang saya kembangkan.</p>
+          <span class="section-kicker">CERTIFICATES & TRAINING</span>
+          <h2>Certificates & Training</h2>
         </div>
 
-        <div class="skills-grid">
-          <article class="content-card">
-            <span class="skill-icon">⌘</span>
-            <h3>Hard Skills</h3>
-            <div class="tag-list">
-              <span>Microsoft Word</span>
-              <span>Microsoft Excel</span>
-              <span>Microsoft PowerPoint</span>
-              <span>Canva</span>
-              <span>Desain Grafis Dasar</span>
-              <span>UI/UX Figma</span>
-              <span>Front-End Dasar</span>
-              <span>Microsoft Access</span>
-              <span>PostgreSQL</span>
-              <span>Navicat Premium</span>
-              <span>Firebase</span>
-              <span>Cloud Firestore</span>
-              <span>Odoo ERP</span>
-            </div>
+        <div class="certificate-grid">
+          <article class="certificate-card">
+            <span class="certificate-year">2023</span>
+            <h3>Microsoft Office Word, Excel & PowerPoint</h3>
+            <p>LKP Almahyra Computer</p>
           </article>
 
-          <article class="content-card">
-            <span class="skill-icon">✳</span>
-            <h3>Soft Skills</h3>
-            <div class="tag-list">
-              <span>Kerja Sama Tim</span>
-              <span>Komunikasi</span>
-              <span>Administrasi</span>
-              <span>Manajemen</span>
-              <span>Koordinasi</span>
-              <span>Dokumentasi</span>
-              <span>Adaptasi</span>
-              <span>Problem Solving</span>
-            </div>
+          <article class="certificate-card">
+            <span class="certificate-year">2026</span>
+            <h3>RevoU Coding Camp</h3>
+            <p>Introduction to Software Engineering · 17 April 2026</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2026</span>
+            <h3>Community Contributor</h3>
+            <p>Dicoding Community Network · 15 June 2026</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2025</span>
+            <h3>LKMM Pra-TD Informatika</h3>
+            <p>29–30 November 2025</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2025</span>
+            <h3>Kegiatan Ameliorer 2025</h3>
+            <p>20 September – 16 November 2025</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2025</span>
+            <h3>Diklat Karakter KIP-K Angkatan 2025</h3>
+            <p>Pelatihan karakter mahasiswa</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2025</span>
+            <h3>PKKMB UNESA 2025</h3>
+            <p>19–25 August 2025</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2026</span>
+            <h3>LKMM-TD 2026</h3>
+            <p>9–10 May 2026</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2026</span>
+            <h3>Mentoring National Essay Competition</h3>
+            <p>16 May 2026</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2026</span>
+            <h3>National Essay Competition</h3>
+            <p>18 May 2026</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2026</span>
+            <h3>Webinar National Essay Competition</h3>
+            <p>7 June 2026</p>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-year">2026</span>
+            <h3>Kuliah Tamu Pelatihan K3</h3>
+            <p>Pendidikan Teknik Elektro · 17 May 2026</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- KONTAK -->
-    <section class="contact-section" id="kontak">
-      <div class="container contact-inner">
-        <span class="eyebrow">08 — GET IN TOUCH</span>
-        <h2>Mari terhubung dan <span>berkolaborasi.</span></h2>
+    <!-- Contact -->
+    <section class="section container contact-section" id="contact">
+      <div class="contact-content">
+        <span class="section-kicker">CONTACT</span>
+        <h2>Contact</h2>
         <p>
-          Berkomitmen untuk terus belajar, mengembangkan kemampuan,
-          dan memberikan kontribusi positif. Terbuka untuk bertukar
-          ide dan berkolaborasi dalam kegiatan teknologi, penelitian,
-          serta pengembangan proyek.
+          Untuk keperluan profesional, diskusi, atau kolaborasi,
+          silakan hubungi saya melalui email atau media sosial berikut.
         </p>
-
-        <div class="contact-cards">
-          <a href="mailto:fitriaazkaaa07@gmail.com" class="contact-card">
-            <span class="contact-symbol">@</span>
-            <span>
-              <small>Email</small>
-              <strong>fitriaazkaaa07@gmail.com</strong>
-            </span>
-          </a>
-
-          <a href="tel:+6282228879712" class="contact-card">
-            <span class="contact-symbol">☎</span>
-            <span>
-              <small>Telepon</small>
-              <strong>+62 822-2887-9712</strong>
-            </span>
-          </a>
-
-          <a href="https://linkedin.com/in/fitriaazkasabila"
-            target="_blank" rel="noopener noreferrer" class="contact-card">
-            <span class="contact-symbol">in</span>
-            <span>
-              <small>LinkedIn</small>
-              <strong>Fitria Azka Sabila ↗</strong>
-            </span>
-          </a>
-
-          <a href="https://github.com/zkasabila"
-            target="_blank" rel="noopener noreferrer" class="contact-card">
-            <span class="contact-symbol">&lt;/&gt;</span>
-            <span>
-              <small>GitHub</small>
-              <strong>zkasabila ↗</strong>
-            </span>
-          </a>
-        </div>
-
         <a class="button button-primary" href="mailto:fitriaazkaaa07@gmail.com">
-          Kirim Email <span>↗</span>
+          Send Email ↗
+        </a>
+      </div>
+
+      <div class="contact-cards">
+        <a href="mailto:fitriaazkaaa07@gmail.com" class="contact-card">
+          <span class="contact-symbol">@</span>
+          <span>
+            <small>Email</small>
+            <strong>fitriaazkaaa07@gmail.com ↗</strong>
+          </span>
+        </a>
+
+        <a href="https://linkedin.com/in/fitriaazkasabila" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-symbol">in</span>
+          <span>
+            <small>LinkedIn</small>
+            <strong>Fitria Azka Sabila ↗</strong>
+          </span>
+        </a>
+
+        <a href="https://github.com/zkasabila" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-symbol">gh</span>
+          <span>
+            <small>GitHub</small>
+            <strong>@zkasabila ↗</strong>
+          </span>
+        </a>
+
+        <a href="https://www.instagram.com/zkasabila/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-symbol">ig</span>
+          <span>
+            <small>Instagram</small>
+            <strong>@zkasabila ↗</strong>
+          </span>
         </a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <a class="brand" href="#beranda">FAS<span class="brand-dot">.</span></a>
-      <p>Dirancang dan dikembangkan oleh Fitria Azka Sabila.</p>
-      <p>© <span id="currentYear"></span> · All rights reserved.</p>
-      <a href="#beranda" class="back-to-top">Kembali ke atas ↑</a>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="logo" href="#home">Fitria Azka Sabila<span>.</span></a>
+      <p>Fitria Azka Sabila</p>
+      <p>© <span id="currentYear"></span></p>
     </div>
   </footer>
 </body>

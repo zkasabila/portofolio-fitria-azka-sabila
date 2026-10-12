@@ -1,11 +1,21 @@
 const themeToggle = document.getElementById("themeToggle");
 const themeIcon = document.getElementById("themeIcon");
 const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
+const navLinks = document.getElementById("navLinks");
 const currentYear = document.getElementById("currentYear");
 
-// Mengatur tema website
-function setTheme(isDark) {
+// Tema
+function getSavedTheme() {
+  try {
+    return localStorage.getItem("fas_theme");
+  } catch (error) {
+    return null;
+  }
+}
+
+function setTheme(theme) {
+  const isDark = theme === "dark";
+
   document.body.classList.toggle("dark-mode", isDark);
   themeIcon.textContent = isDark ? "☀" : "☾";
 
@@ -14,40 +24,45 @@ function setTheme(isDark) {
     isDark ? "Aktifkan mode terang" : "Aktifkan mode gelap"
   );
 
-  localStorage.setItem("fas-theme", isDark ? "dark" : "light");
+  try {
+    localStorage.setItem("fas_theme", theme);
+  } catch (error) {
+    // Tema tetap berfungsi tanpa penyimpanan.
+  }
 }
 
-// Memuat tema yang terakhir dipilih
-const savedTheme = localStorage.getItem("fas-theme");
-setTheme(savedTheme === "dark");
+setTheme(getSavedTheme() === "dark" ? "dark" : "light");
 
-// Mengganti tema ketika tombol diklik
 themeToggle.addEventListener("click", function () {
   const isDark = document.body.classList.contains("dark-mode");
-  setTheme(!isDark);
+  setTheme(isDark ? "light" : "dark");
 });
 
-// Membuka dan menutup menu pada perangkat mobile
+// Navigasi mobile
 menuToggle.addEventListener("click", function () {
-  const isOpen = navMenu.classList.toggle("open");
+  const isOpen = navLinks.classList.toggle("open");
 
-  menuToggle.setAttribute("aria-expanded", isOpen);
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
   menuToggle.setAttribute(
     "aria-label",
-    isOpen ? "Tutup menu" : "Buka menu"
+    isOpen ? "Tutup menu navigasi" : "Buka menu navigasi"
   );
 });
 
-// Menutup menu setelah tautan navigasi dipilih
-const navLinks = navMenu.querySelectorAll("a");
-
-navLinks.forEach(function (link) {
+navLinks.querySelectorAll("a").forEach(function (link) {
   link.addEventListener("click", function () {
-    navMenu.classList.remove("open");
+    navLinks.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "Buka menu");
+    menuToggle.setAttribute("aria-label", "Buka menu navigasi");
   });
 });
 
-// Menampilkan tahun secara otomatis
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 800) {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  }
+});
+
+// Tahun footer
 currentYear.textContent = new Date().getFullYear();
